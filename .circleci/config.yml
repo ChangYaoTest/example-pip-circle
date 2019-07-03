@@ -25,5 +25,4 @@ jobs:
             python setup.py install
             pip freeze
             
-after_success:
-- bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
+      - run: bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
